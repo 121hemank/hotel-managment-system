@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hotel Management</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="container">
+    <h2>Customer Registration</h2>
+    <form action="/register" method="post">
+        <label>Name:</label>
+        <input type="text" name="name" required><br>
+        <label>Address:</label>
+        <input type="text" name="addr" required><br>
+        <label>Check-in Date:</label>
+        <input type="date" name="indate" required><br>
+        <label>Check-out Date:</label>
+        <input type="date" name="outdate" required><br>
+        <button type="submit">Register</button>
+    </form>
+
+    <div class="links">
+        <a href="/roomtype">View Room Types</a> |
+        <a href="/restaurant">View Restaurant Menu</a>
+    </div>
+</div>
+</body>
+</html>
